@@ -9,7 +9,7 @@ a.navbar-brand {
 
 /* Provide sufficient contrast against white background */
 a {
-  color: #0366d6;
+  color: orangered;
 }
 
 .btn-primary {
@@ -57,9 +57,15 @@ html {
   position: relative;
   min-height: 100%;
 }
+h1 {
+background-color:grey;
+color:red;
+
+}
 
 body {
   /* Margin bottom by footer height */
+  background-color:grey;
   margin-bottom: 60px;
 }
 .footer {
@@ -68,4 +74,12 @@ body {
   width: 100%;
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
+}
+
+table {
+color:aqua;
+background-color:darksalmon;
+}
+li {
+color:darkorchid;
 }
