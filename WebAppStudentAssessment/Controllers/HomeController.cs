@@ -22,11 +22,11 @@ namespace WebAppStudentAssessment.Controllers
         {
             return View();
         }
-        public IActionResult Contact()
+        public IActionResult About()
         {
             return View();
         }
-        public IActionResult About()
+        public IActionResult Contact()
         {
             return View();
         }

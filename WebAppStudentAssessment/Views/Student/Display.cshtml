@@ -1,0 +1,56 @@
+﻿@model IEnumerable<WebAppStudentAssessment.Models.Student>
+
+@{
+    ViewData["Title"] = "Display";
+}
+
+<h1>Display</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.SId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SDob)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SContact)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SDob)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SContact)
+                </td>
+
+            </tr>
+        }
+
+
+    </tbody>
+
+
+</table>
+
+  <h2>   Total no of  Student=@ViewBag.Total</h2>
